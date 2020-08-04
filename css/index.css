@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+border: 1px solid black;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -128,33 +128,31 @@ button:hover{
 }
 
 .artist{
-    width:100%;
+    width:40%;
     text-align:center;
 }
 .artist img{
     width:100%;
-    height:100%;
-    
 }
+
+
 /* MEDIA BREAKPOINT 500px */
 @media (max-width: 500px) {
 .title-container div{
+    background-size: cover;
+    background-position: center;	
+    color: white;	
+    width:100%;
+    height:35vh;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
+    margin:5% 0;
 }
-.title-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-}
-header{
-    display:flex;
-    justify-content: center;
-    max-width: 100%;
+h1{
+    font-size: 3.5vh;
+    font-weight: bold;
 }
 nav{
     width:60%;
@@ -162,13 +160,8 @@ nav{
     justify-content:space-evenly;
     margin-top:5%;
 }
-nav a{
-    color:#626262;
-}
 nav span{
     border-left:3px solid #626262;
-  
-
 }
 .artists-container{
     display:flex;
@@ -176,23 +169,20 @@ nav span{
     justify-content: space-around;
     align-items: center;
 }
-.artist{
-    display:flex;
-    flex-direction: column;
-    width:40%;
-    text-align:center;
-    font-size: 3
-}
 .artist img{
     width:100%;
-    height:100%;
+    height:auto;
 }
-p, .name, .bio {	
+p, .name{	
     font-family: 'Raleway', sans-serif;	
-    	
-    font-size: .5rem;
+    font-size: 5vh;
     margin: 4%;	
 }
-
+.bio{
+    display:flex;
+    font-size:2vw;
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
 
 }
