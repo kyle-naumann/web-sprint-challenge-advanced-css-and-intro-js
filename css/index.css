@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 1px solid black;  
+border:0;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -148,7 +148,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:5% 0;
+    margin-bottom:2vh;
 }
 h1{
     font-size: 3.5vh;
@@ -160,17 +160,25 @@ nav{
     justify-content:space-evenly;
     margin-top:5%;
 }
-nav span{
-    border-left:3px solid #626262;
+nav a{
+font-size:2.8vh;
+}
+.title-container hr{
+    width:100%;
+    color:#626262;
+    margin-top:0;
 }
 .artists-container{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    width:100%;
+}
+.artist{
+    width:100%;
 }
 .artist img{
-    width:100%;
+    width:45%;
     height:auto;
 }
 p, .name{	
@@ -178,11 +186,17 @@ p, .name{
     font-size: 5vh;
     margin: 4%;	
 }
+.artist a{
+    font-size:2vh ;
+}
 .bio{
     display:flex;
-    font-size:2vw;
-    max-width: 100%;
-    margin-bottom: 3rem;
+    font-size: 2vw;
+    margin-bottom: 2rem;
+    padding-right: 12vh;
+    padding-left: 12vh;
+    line-height: 1.5vh;
+    margin-top: 1vh;
 }
 
 }
